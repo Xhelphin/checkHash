@@ -1,4 +1,4 @@
-from isHash import *
+from checkHash import *
 
 def test_isMD2_valid():
     assert isMD2("1c8f1e6a94aaa7145210bf90bb52871a") == True

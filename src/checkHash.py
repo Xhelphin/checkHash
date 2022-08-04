@@ -1,6 +1,6 @@
 """
-isHash
-https://github.com/xhelphin/isHash
+checkHash
+https://github.com/xhelphin/checkHash
 
 Python package to check if a string is a valid hash.
 """

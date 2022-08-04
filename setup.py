@@ -4,10 +4,10 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="isHash",
+    name="checkHash",
     version="0.0.1",
     description="Python package to check if a string is a valid hash.",
-    py_modules=["isHash"],
+    py_modules=["checkHash"],
     package_dir={'': 'src'},
     install_requires=[
         "isHex>=1.0.1",
@@ -32,7 +32,7 @@ setup(
             "twine>=3.8.0",
         ],
     },
-    url="https://github.com/xhelphin/isHash",
+    url="https://github.com/xhelphin/checkHash",
     author="Jack Greenacre",
     author_email="jaxk.programmer@gmail.com",
 )

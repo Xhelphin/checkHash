@@ -1,11 +1,11 @@
-# ✅ isHash
+# ✅ checkHash
 
 Python package to check if a string is a valid hash.  
 
 ## 🚀 Usage
 
 ```python
-from isHash import *
+from checkHash import *
 
 # Check if valid MD2 hash
 isMD2("1c8f1e6a94aaa7145210bf90bb52871a") # Returns True
@@ -65,12 +65,12 @@ isOtherHash("abcdef1234567890", length) # Returns True
 Run the following to install:  
 
 ```bash
-$ pip install isHash
+$ pip install checkHash
 ```
 
-## 👨‍💻 Developing isHash
+## 👨‍💻 Developing checkHash
 
-To install isHash, along with the tools you will need to develop and run tests, run the following in your virtualenv:  
+To install checkHash, along with the tools you will need to develop and run tests, run the following in your virtualenv:  
 
 ```bash
 $ pip install -e .[dev]
