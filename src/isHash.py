@@ -157,13 +157,23 @@ def isSHA3512(hash):
     """
     Returns True if supplied argument is a valid SHA-3 512 hash, else returns False.
     """
-    if not isHexUpper(hash):
+    if not isHex(hash):
         return False
     if len(hash) != 128:
         return False
     return True
 
-def isNTLM(hash, length):
+def isNTLM(hash):
+    """
+    Returns True if supplied argument is a valid NTLM hash, else returns False.
+    """
+    if not isHexUpper(hash):
+        return False
+    if len(hash) != 32:
+        return False
+    return True
+
+def isOtherHash(hash, length):
     """
     Returns True if supplied argument is a valid hash with the user-specified length, else returns False.
     """
