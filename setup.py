@@ -10,7 +10,7 @@ setup(
     py_modules=["isHash"],
     package_dir={'': 'src'},
     install_requires=[
-        "isHash>=1.0.1",
+        "isHex>=1.0.1",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
