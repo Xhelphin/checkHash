@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="checkHash",
-    version="0.0.1",
+    version="1.0.0",
     description="Python package to check if a string is a valid hash.",
     py_modules=["checkHash"],
     package_dir={'': 'src'},

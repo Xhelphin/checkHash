@@ -58,6 +58,30 @@ isNTLM("A0D6DCCEBBC32FD38E7355AF9926A582") # Returns True
 # Check if other valid hash
 length = 16
 isOtherHash("abcdef1234567890", length) # Returns True
+
+# Check if valid RipeMD-128 hash
+isRipeMD128("67f9fe75ca2886dc76ad00f7276bdeba") # Returns True
+
+# Check if valid RipeMD-160 hash
+isRipeMD160("527a6a4b9a6da75607546842e0e00105350b1aaf") # Returns True
+
+# Check if valid RipeMD-256 hash
+isRipeMD256("567750c6d34dcba7ae038a80016f3ca3260ec25bfdb0b68bbb8e730b00b2447d") # Returns True
+
+# Check if valid RipeMD-320 hash
+isRipeMD320("f9832e5bb00576fc56c2221f404eb77addeafe49843c773f0df3fc5a996d5934f3c96e94aeb80e89") # Returns True
+
+# Check if valid CRC16 hash
+isCRC16("fa4d") # Returns True
+
+# Check if valid CRC32 hash
+isCRC32("ec4ac3d0") # Returns True
+
+# Check if valid Adler32 hash
+isAdler32("1f9e046a") # Returns True
+
+# Check if valid Whirlpool hash
+isWhirlpool("3d837c9ef7bb291bd1dcfc05d3004af2eeb8c631dd6a6c4ba35159b8889de4b1ec44076ce7a8f7bfa497e4d9dcb7c29337173f78d06791f3c3d9e00cc6017f0b") # Returns True
 ```
 
 ## 📦 Installation
@@ -76,19 +100,6 @@ To install checkHash, along with the tools you will need to develop and run test
 $ pip install -e .[dev]
 ```
 
-## 🖊 Planned Features
-
-There are some planned features that have currently not been implemented.  
-
-- RipeMD 128
-- RipeMD 160
-- RipeMD 256
-- RipeMD 320
-- CRC 16
-- CRC 32
-- Adler 32
-- Whirlpool
-
 ## 🚦 Development Progress
 
-Unstable Development  
+Stable Development  
