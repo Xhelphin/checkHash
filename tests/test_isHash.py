@@ -49,7 +49,7 @@ def test_isNTLM_valid():
     assert isNTLM("A0D6DCCEBBC32FD38E7355AF9926A582") == True
 
 def test_isOtherHash_valid():
-    assert isOtherHash("abcdef01234567890", 16) == True
+    assert isOtherHash("abcdef1234567890", 16) == True
 
 ##
 
@@ -102,7 +102,7 @@ def test_isNTLM_toolong():
     assert isNTLM("A0D6DCCEBBC32FD38E7355AF9926A582A") == False
 
 def test_isOtherHash_toolong():
-    assert isOtherHash("abcdef01234567890a", 16) == False
+    assert isOtherHash("abcdef1234567890a", 16) == False
 
 ##
 
@@ -155,7 +155,7 @@ def test_isNTLM_tooshort():
     assert isNTLM("A0D6DCCEBBC32FD38E7355AF9926A58") == False
 
 def test_isOtherHash_tooshort():
-    assert isOtherHash("abcdef0123456789", 16) == False
+    assert isOtherHash("abcdef123456789", 16) == False
 
 ##
 
