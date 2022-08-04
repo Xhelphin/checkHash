@@ -51,6 +51,30 @@ def test_isNTLM_valid():
 def test_isOtherHash_valid():
     assert isOtherHash("abcdef1234567890", 16) == True
 
+def test_isRipeMD128_valid():
+    assert isRipeMD128("67f9fe75ca2886dc76ad00f7276bdeba") == True
+
+def test_isRipeMD160_valid():
+    assert isRipeMD160("527a6a4b9a6da75607546842e0e00105350b1aaf") == True
+
+def test_isRipeMD256_valid():
+    assert isRipeMD256("567750c6d34dcba7ae038a80016f3ca3260ec25bfdb0b68bbb8e730b00b2447d") == True
+
+def test_isRipeMD320_valid():
+    assert isRipeMD320("f9832e5bb00576fc56c2221f404eb77addeafe49843c773f0df3fc5a996d5934f3c96e94aeb80e89") == True
+
+def test_isCRC16_valid():
+    assert isCRC16("fa4d") == True
+
+def test_isCRC32_valid():
+    assert isCRC32("ec4ac3d0") == True
+
+def test_isAdler32_valid():
+    assert isAdler32("1f9e046a") == True
+
+def test_isWhirlpool_valid():
+    assert isWhirlpool("3d837c9ef7bb291bd1dcfc05d3004af2eeb8c631dd6a6c4ba35159b8889de4b1ec44076ce7a8f7bfa497e4d9dcb7c29337173f78d06791f3c3d9e00cc6017f0b") == True
+
 ##
 
 def test_isMD2_toolong():
@@ -104,6 +128,30 @@ def test_isNTLM_toolong():
 def test_isOtherHash_toolong():
     assert isOtherHash("abcdef1234567890a", 16) == False
 
+def test_isRipeMD128_toolong():
+    assert isRipeMD128("67f9fe75ca2886dc76ad00f7276bdebaa") == False
+
+def test_isRipeMD160_toolong():
+    assert isRipeMD160("527a6a4b9a6da75607546842e0e00105350b1aafa") == False
+
+def test_isRipeMD256_toolong():
+    assert isRipeMD256("567750c6d34dcba7ae038a80016f3ca3260ec25bfdb0b68bbb8e730b00b2447da") == False
+
+def test_isRipeMD320_toolong():
+    assert isRipeMD320("f9832e5bb00576fc56c2221f404eb77addeafe49843c773f0df3fc5a996d5934f3c96e94aeb80e89a") == False
+
+def test_isCRC16_toolong():
+    assert isCRC16("fa4da") == False
+
+def test_isCRC32_toolong():
+    assert isCRC32("ec4ac3d0a") == False
+
+def test_isAdler32_toolong():
+    assert isAdler32("1f9e046aa") == False
+
+def test_isWhirlpool_toolong():
+    assert isWhirlpool("3d837c9ef7bb291bd1dcfc05d3004af2eeb8c631dd6a6c4ba35159b8889de4b1ec44076ce7a8f7bfa497e4d9dcb7c29337173f78d06791f3c3d9e00cc6017f0ba") == False
+
 ##
 
 def test_isMD2_tooshort():
@@ -156,6 +204,30 @@ def test_isNTLM_tooshort():
 
 def test_isOtherHash_tooshort():
     assert isOtherHash("abcdef123456789", 16) == False
+
+def test_isRipeMD128_tooshort():
+    assert isRipeMD128("67f9fe75ca2886dc76ad00f7276bdeb") == False
+
+def test_isRipeMD160_tooshort():
+    assert isRipeMD160("527a6a4b9a6da75607546842e0e00105350b1aa") == False
+
+def test_isRipeMD256_tooshort():
+    assert isRipeMD256("567750c6d34dcba7ae038a80016f3ca3260ec25bfdb0b68bbb8e730b00b2447") == False
+
+def test_isRipeMD320_tooshort():
+    assert isRipeMD320("f9832e5bb00576fc56c2221f404eb77addeafe49843c773f0df3fc5a996d5934f3c96e94aeb80e8") == False
+
+def test_isCRC16_tooshort():
+    assert isCRC16("fa4") == False
+
+def test_isCRC32_tooshort():
+    assert isCRC32("ec4ac3d") == False
+
+def test_isAdler32_tooshort():
+    assert isAdler32("1f9e046") == False
+
+def test_isWhirlpool_tooshort():
+    assert isWhirlpool("3d837c9ef7bb291bd1dcfc05d3004af2eeb8c631dd6a6c4ba35159b8889de4b1ec44076ce7a8f7bfa497e4d9dcb7c29337173f78d06791f3c3d9e00cc6017f0") == False
 
 ##
 
@@ -214,3 +286,27 @@ def test_isNTLM_invalidcharacter():
 
 def test_isOtherHash_invalidcharacter():
     assert isOtherHash("abcdef01234567890g", 17) == False
+
+def test_isRipeMD128_invalidcharacter():
+    assert isRipeMD128("67f9fe75ca2886dc76ad00f7276bdebag") == False
+
+def test_isRipeMD160_invalidcharacter():
+    assert isRipeMD160("527a6a4b9a6da75607546842e0e00105350b1aafg") == False
+
+def test_isRipeMD256_invalidcharacter():
+    assert isRipeMD256("567750c6d34dcba7ae038a80016f3ca3260ec25bfdb0b68bbb8e730b00b2447dg") == False
+
+def test_isRipeMD320_invalidcharacter():
+    assert isRipeMD320("f9832e5bb00576fc56c2221f404eb77addeafe49843c773f0df3fc5a996d5934f3c96e94aeb80e89g") == False
+
+def test_isCRC16_invalidcharacter():
+    assert isCRC16("fa4dg") == False
+
+def test_isCRC32_invalidcharacter():
+    assert isCRC32("ec4ac3d0g") == False
+
+def test_isAdler32_invalidcharacter():
+    assert isAdler32("1f9e046ag") == False
+
+def test_isWhirlpool_invalidcharacter():
+    assert isWhirlpool("3d837c9ef7bb291bd1dcfc05d3004af2eeb8c631dd6a6c4ba35159b8889de4b1ec44076ce7a8f7bfa497e4d9dcb7c29337173f78d06791f3c3d9e00cc6017f0bg") == False

@@ -182,3 +182,83 @@ def isOtherHash(hash, length):
     if len(hash) != length:
         return False
     return True
+
+def isRipeMD128(hash):
+    """
+    Returns True if supplied argument is a valid RipeMD-128 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 32:
+        return False
+    return True
+
+def isRipeMD160(hash):
+    """
+    Returns True if supplied argument is a valid RipeMD-160 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 40:
+        return False
+    return True
+
+def isRipeMD256(hash):
+    """
+    Returns True if supplied argument is a valid RipeMD-256 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 64:
+        return False
+    return True
+
+def isRipeMD320(hash):
+    """
+    Returns True if supplied argument is a valid RipeMD-320 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 80:
+        return False
+    return True
+
+def isCRC16(hash):
+    """
+    Returns True if supplied argument is a valid CRC16 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 4:
+        return False
+    return True
+
+def isCRC32(hash):
+    """
+    Returns True if supplied argument is a valid CRC32 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 8:
+        return False
+    return True
+
+def isAdler32(hash):
+    """
+    Returns True if supplied argument is a valid Adler32 hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 8:
+        return False
+    return True
+
+def isWhirlpool(hash):
+    """
+    Returns True if supplied argument is a valid Whirlpool hash, else returns False.
+    """
+    if not isHex(hash):
+        return False
+    if len(hash) != 128:
+        return False
+    return True
