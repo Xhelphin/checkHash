@@ -5,12 +5,12 @@ with open("README.md", "r") as fh:
 
 setup(
     name="checkHash",
-    version="1.0.0",
+    version="1.0.1",
     description="Python package to check if a string is a valid hash.",
     py_modules=["checkHash"],
     package_dir={'': 'src'},
     install_requires=[
-        "isHex>=1.0.1",
+        "isHex>=1.1.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
